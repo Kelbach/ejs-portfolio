@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Emily Safron</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 50px;
+    text-align: center;
+    background-image: url('img/juno.jpg');
+    /*background: #8fd0c0;*/
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 30px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 300px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Emily Safron</h1>
+  <h4>Ph.D., Physics<br>Louisiana State University and Case Western Reserve University</h4>
+</div>
+
+<div class="navbar">
+  <a href="http://tigers.phys.lsu.edu/students/esafro2/main.html">Home</a>
+  <a href="http://tigers.phys.lsu.edu/students/esafro2/CV-2019.pdf">CV</a>
+  <a href="https://github.com/ejsafron/SATCHEL">GitHub</a>
+<!--  <a href="#" class="right">Contact</a> -->
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>Hello!</h2>
+      <p>This is me:</p>
+      <img src="img/dfjkdsl.png" alt="Looking more put-together than usual, I confess" style="width:336px;height:432px;">
+      <p>I'm a native of Ohio, USA, currently working in the Department of Physics &amp; Astronomy at LSU in Baton Rouge, Louisiana.  I'm also frequently found in the Department of Astronomy at Case Western Reserve University in Cleveland, Ohio.  I have lots of hobbies, and I love learning new things!</p>
+      <h3>Why astrophysics?</h3>
+      <p>My love for astrophysics began with the unbelievable coolness and mystery of black holes, and has continued with the constant, awe-inspiring feeling of smallness that comes with studying things many orders of magnitude bigger, older, and more profound than humans.</p>
+      <img src="img/me-3.png" alt="That time I was a guest investigator on the SOFIA aircraft/telescope" style="width:336px;height:246px;"><br>
+      <img src="img/me-2.png" alt="In Bernheim Forest, one of my favorite places" style="width:336px;height:330px;"><br>
+      <h2>Contact:</h2>
+      <p><b>Email:</b>  ejsafron@gmail.com<br><b>Phone:</b>  (440) 864-2581<br><b>Mailing address:</b> &ensp;  554 Sears Library<br>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Case Western Reserve University<br>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 2083 MLK Jr. Dr.<br>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Cleveland, OH 44106</p>
+      <h2>Publications:</h2>
+      <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&author=Safron,%20Emily%20J.&db_key=AST">On ADS</a><br><a href="https://arxiv.org/search/?searchtype=author&query=Safron%2C+E+J">On arXiv</a></p>
+  </div>
+  <div class="main">
+      <h2>CURRICULUM VITAE</h2>
+      <h5>Last updated 30 Mar 2022</h5>
+      <p>The following is a link to the most recent version of my CV:  &nbsp;<a href="http://tigers.phys.lsu.edu/students/esafro2/CV-2021.pdf">Now with 10% more, absolutely free!</a></p>
+      <p>&nbsp;</p>
+      <h3>Other fun things that don't fit on my CV but are still worth mentioning:</h3>
+      <p style="font-size:110%;"><img src="img/kevin-paint.jpg" alt="I married this man later" style="float:right;width:325px;height:452px;margin:0px 0px 0px 30px;"><strong>Piano &amp; Vocal Performance</strong><br><small>(2006&minus;Present)</small></p>
+      <p>
+<ul>
+  <li>Benjamin Britten's <i>Ceremony of Carols</i>, soprano soloist, 2015.</li>
+  <li>Dan Forrest's <i>Requiem for the Living</i>, soprano soloist, 2014.</li>
+  <li>Vocal recitals between 2012 and 2016.</li>
+  <li>Piano recitals between 2007 and 2014.</li>
+  <li>Robert Beckstrom's opera <i>Job</i>, soprano soloist, 2012.</li>
+  <li>Camille Saint-Sa&euml;ns' <i>Christmas Oratorio</i>, soprano soloist, 2011.</li>
+</ul>
+      </p>
+      <p style="font-size:30%;">&nbsp;</p>
+      <p style="font-size:110%;"><strong>Traditional &amp; Digital Arts</strong><br><small>(2004&minus;Present)</small></p>
+      <p>Maintenance of digital art gallery.  Independent gathering and management of both solitary and recurrent commission clientele.</br><strong>At right:</strong>  Digital painting done in 2014.</p>
+      <p style="font-size:30%;">&nbsp;</p>
+      <p style="font-size:110%;"><strong>Roller Figure Skating</strong><br><small>(1998&minus;2007)</small></p>
+      <p>
+<ul>
+  <li>World Championship participation, 2006.</li>
+  <li>National medals received in 1999, 2000, 2006, 2007.</li>
+  <li>Regional Champion from 1998&minus;2005.</li>
+</ul>
+      </p>
+      <p>&nbsp;</p>
+      <h2>REFERENCES</h2>
+      <p style="font-size:110%;"><strong>References for my research work:</strong></p>
+<table style="width:100%">
+  <tr>
+    <td><strong>Dr. Tabetha Boyajian</strong><br>Assistant Professor of Physics &amp; Astronomy<br>Louisiana State University<br><strong>email:  boyajian@lsu.edu</strong><br><small>(225) 578-1161<br>261-A Nicholson Hall, Tower Dr.<br>Baton Rouge, LA 70803-4001</small></td>
+    <td><strong>Dr. Parampreet Singh</strong><br>Assistant Professor of Physics<br>Louisiana State University<br><strong>email:  psingh@phys.lsu.edu</strong><br><small>(225) 578-7513<br>255-A Nicholson Hall, Tower Dr.<br>Baton Rouge, LA 70803-4001</small></td>
+    <td><strong>Dr. S. Thomas Megeath</strong><br>Professor of Astronomy<br>University of Toledo<br><strong>email:  smegeath@utoledo.edu</strong><br><small>(419) 530-7812<br>Ritter Astrophysical Research Center 2040<br>Toledo, OH 43606</small></td>
+  </tr>
+</table>
+      <p style="font-size:50%;">&nbsp;</p>
+      <p style="font-size:110%;"><strong>References for my teaching work:</strong></p>
+<table style="width:100%">
+  <tr>
+    <td><strong>Dr. Steven Hubbard</strong><br>Visiting Assistant Professor of Physics<br>Stonehill College<br><strong>email:  shubbard@stonehill.edu</strong></td>
+    <td><strong>Dr. Rosa Rivera-Hainaj</strong><br>Associate Vice President<br>Our Lady of the Lake University<br><strong>email:  rhainaj@lake.ollusa.edu</strong></td>
+  </tr>
+</table>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>Last updated:  30 March 2022</h3>
+</div>
+
+</body>
+</html>
