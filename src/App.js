@@ -17,8 +17,8 @@ function App() {
         return <About />;
       case 'My CV':
         return <MyCV />;
-        case 'Github':
-          return <Github />;
+        // case 'Github':
+        //   return <Github />;
       default:
         return <About />;
     }
