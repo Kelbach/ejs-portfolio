@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 // import components and icons
 import NavTabs from './components/NavTabs';
-import About from './components/About';
-import Github from './components/Github';
+// import About from './components/About';
+// import Github from './components/Github';
 import MyCV from './components/MyCV';
-// import './style.css';
+import Main from './pages/main';
+import dfjkdsl from './assets/IMAGES/dfjkdsl.png';
+import './style.css';
 
 function App() {
   // Using useState, set the default value for currentPage to 'Home'
@@ -14,22 +17,23 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'About Me':
-        return <About />;
+        return <Main />;
       case 'My CV':
         return <MyCV />;
         // case 'Github':
         //   return <Github />;
       default:
-        return <About />;
+        return <Main />;
     }
   };
 
   return (
     <div>
     <header>
-      <div class="header">
+      <div className="header">
         <h1>Emily Safron</h1>
         <h4>Ph.D. candidate in astrophysics and Louisiana Board of Regents Fellow at Louisiana State University</h4>
+        <img src={dfjkdsl} alt="Looking more put-together than usual, I confess"  />
       </div>
       <nav>
         {/* Pass the state value and the setter as props to NavTabs */}
@@ -45,7 +49,17 @@ function App() {
     </header>
     <div>{renderPage(currentPage)}</div>
     <footer>
-      <h4>Made With Heart by Kevin Kelbach</h4>
+        <div className='contact'>
+          <p><u>Email</u>: <a href = "mailto: ejsafron@gmail.com">ejsafron@gmail.com</a></p>
+          <p><u>Phone</u>: <a href = "tel:+4408642581">(440) 864-2581</a></p>
+          <p><u>Mailing address</u>: 
+          Case Western Reserve University, 
+          Sears Library 554, 
+          2083 MLK Jr. Dr., 
+          Cleveland, OH 44106</p>
+          
+        </div>
+        <h4>Built with React by <a href="https://github.com/Kelbach">Kevin Kelbach</a></h4>
     </footer>
     </div>
   );

@@ -2,39 +2,82 @@
     box-sizing: border-box;
 }
 
+/*LOGANS A BEAST*/
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* Style the body */
 body {
     font-family: Arial;
-    margin: 0;
+    margin: 0px;
+    padding-bottom: 5.5rem;
 }
 
+.title {
+    margin: 10px;
+}
+
+.buttons {
+    position: sticky;
+    top: 0;
+}
 /* Header/logo Title */
-.header {
+header {
     padding: 50px;
     text-align: center;
-    background-image: url('img/juno.jpg');
+    background-image: url('./assets/IMAGES/juno.jpg');
     /*background: #8fd0c0;*/
     color: white;
+    padding: 0px;
 }
 
 /* Increase the font size of the heading */
-.header h1 {
+header h1 {
     font-size: 40px;
+    margin: 0px;
+}
+
+.header img {
+    width: 15rem;
+    margin: 2.5% auto;
+    border-radius: 50%;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    max-width:45%;
+    
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #333;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*style the navbar list items*/
+.navbar li {
+    list-style: none;
+    margin: 0px 10px;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-    float: left;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -50,21 +93,21 @@ body {
 }
 
 /* Column container */
-.row {  
-    display: -ms-flexbox; /* IE10 */
+/* .row {  
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
-}
+} */
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
-    -ms-flex: 30%; /* IE10 */
+/* .side {
+    -ms-flex: 30%;
     flex: 30%;
     background-color: #f1f1f1;
     padding: 30px;
-}
+} */
 
 /* Main column */
 .main {   
@@ -82,10 +125,22 @@ body {
 }
 
 /* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem; 
+    display:flex;
+    justify-content: space-between;
+    padding: 3px;
+    text-align: left;
     background: #ddd;
+    font-size: 12px;
+}
+
+footer h4 {
+    text-align: right;
+    font-size: 10px;
 }
 
 /* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
