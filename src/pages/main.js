@@ -43,9 +43,9 @@ function Main(){
         <section id="about-me">
             <article>
                 <div className="row buttons">
-                    {!showAbout ? <button type="button" class="btn btn-primary col-4" onClick={()=>handleAbout()} >About Me</button> : <button type="button" class="btn btn-info col-4" onClick={()=>handleAbout()} >About Me</button>}
-                    {!showResearch ? <button type="button" class="btn btn-primary col-4" onClick={()=>handleResearch()} >My Research</button> : <button type="button" class="btn btn-info col-4" onClick={()=>handleResearch()} >My Research</button>}
-                    {!showPublications ? <button type="button" class="btn btn-primary col-4" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" class="btn btn-info col-4" onClick={()=>handlePublications()} >My Publications</button>}
+                    {!showAbout ? <button type="button" className="btn btn-primary col-4" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handleAbout()} >About Me</button>}
+                    {!showResearch ? <button type="button" className="btn btn-primary col-4" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handleResearch()} >My Research</button>}
+                    {!showPublications ? <button type="button" className="btn btn-primary col-4" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handlePublications()} >My Publications</button>}
                 </div>
                 <div className="row d-flex m-2">
                     {showAbout ? <About /> : <></>}
