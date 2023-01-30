@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import PubCard from '../PubCard';
 // import api from '../../utils/api';
 
 function Publications(){
@@ -20,20 +21,7 @@ function Publications(){
     
     // fetchPublications();
 
-    const publications = {
-        "responseHeader": {
-            "status": 0,
-            "QTime": 35,
-            "params": {
-                "q": "author:\"safron ,emily j\"",
-                "fl": "pubdate,issue,author,title,page,volume,bibcode",
-                "start": "0",
-                "internal_logging_params": "X-Amzn-Trace-Id=Root=1-63d2c9b2-2b73c0091d02332b28f39443",
-                "sort": "date desc",
-                "rows": "30",
-                "wt": "json"
-            }
-        },
+    const adsPublications = {
         "response": {
             "numFound": 15,
             "start": 0,
@@ -645,13 +633,25 @@ function Publications(){
         }
     };
     
-
     return(
-        <div className="main publications">    
+        <div className="main publications row d-flex justify-content-center">    
             <h2>PUBLICATIONS</h2>
             <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;author=Safron,%20Emily%20J.&amp;db_key=AST">View my publications on ADS.</a> This research has made use of NASA&apos;s Astrophysics Data System Bibliographic Services.<br/>
+            </p>
             
-            <a href="https://arxiv.org/search/?searchtype=author&amp;query=Safron%2C+E+J">View my publications on arXiv</a>. Thank you to arXiv for use of its open access interoperability.</p>
+                {adsPublications.response.docs.map( pub => (
+                    <PubCard 
+                        bibcode={pub.bibcode}
+                        authors={pub.author}
+                        issue={pub.issue}
+                        page={pub.page}
+                        pubdate={pub.pubdate}
+                        title={pub.title}
+                        volume={pub.volume}
+                    />
+                ))}
+            
+            
         </div>
     );
 }

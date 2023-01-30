@@ -30,6 +30,7 @@ header {
     /*background: #8fd0c0;*/
     color: white;
     padding: 0px;
+    
 }
 
 /* Increase the font size of the heading */
@@ -42,6 +43,7 @@ header h1 {
     width: 15rem;
     margin: 2.5% auto;
     border-radius: 50%;
+    
 }
 
 img {
