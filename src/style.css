@@ -138,11 +138,17 @@ footer {
     text-align: left;
     background: #ddd;
     font-size: 12px;
+    z-index: 100;
 }
 
 footer h4 {
     text-align: right;
     font-size: 10px;
+}
+
+.card .card-body a h5:hover {
+    color: rgb(214, 214, 214);
+    background-color:rgb(104, 104, 104);
 }
 
 /* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
