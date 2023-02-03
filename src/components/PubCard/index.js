@@ -1,5 +1,5 @@
 import React from "react";
-
+import { dateLocalFormatter } from "../../utils/helpers";
 
 
 function PubCard(props) {
@@ -31,7 +31,7 @@ function PubCard(props) {
                 {props.issue ? <p className='card-text mb-auto'>Issue #{props.issue}</p> : <p></p>}
                 {props.volume ? <p className='card-text mb-auto'>Volume #{props.volume}</p> : <p></p>}
                 <p className='card-text mb-auto'>Page {props.page}</p>
-                {props.pubdate ? <p className='card-text mb-auto'>Date Published: {props.pubdate}</p> : <p></p>}
+                {props.pubdate ? <p className='card-text mb-auto'>Date Published: {dateLocalFormatter(props.pubdate)}</p> : <p></p>}
                 <p className="small align-self-end mb-0">{props.bibcode}</p>
             </div>
         </div>
