@@ -47,7 +47,7 @@ function App() {
       </article>  */}
     </section> }
     </header>
-    <div>{renderPage(currentPage)}</div>
+    <div className="booty">{renderPage(currentPage)}</div>
     <footer>
         <div className='contact'>
           <p><u>Email</u>: <a href = "mailto: ejsafron@gmail.com">ejsafron@gmail.com</a></p>

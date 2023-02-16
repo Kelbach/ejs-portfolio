@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 /*LOGANS A BEAST*/
@@ -12,6 +13,31 @@ body {
     font-family: Arial;
     margin: 0px;
     padding-bottom: 4rem;
+    
+}
+
+a:link {
+    color: rgb(61, 2, 155);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(153, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(4, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 81, 0);
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 .title {
@@ -111,10 +137,12 @@ img {
     padding: 30px;
 } */
 
+.booty {
+    background-color: #d4d4d4;
+}
+
 /* Main column */
 .main {   
-   
-    background-color: white;
     padding: 30px;
 }
 
@@ -135,7 +163,7 @@ footer {
     justify-content: space-between;
     padding: 4px;
     text-align: left;
-    background: #ddd;
+    background: #adadad;
     font-size: 12px;
     z-index: 100;
 }
