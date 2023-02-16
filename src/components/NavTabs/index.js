@@ -2,8 +2,13 @@ import React from 'react';
 import '../../style.css';
 
 // Props are passed through our functional component.
+
+/* if navigation is to be used later, use:
+* const tabs = ['About Me', 'My CV']
+*/
+
 function NavTabs(props) {
-  const tabs = ['About Me', 'My CV' ];
+  const tabs = [ ];
   return (
     <ul className="navbar nav-tabs justify-content-start">
       {tabs.map(tab => (

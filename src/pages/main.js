@@ -7,6 +7,7 @@ import React, {useState} from 'react';
 import About from '../components/About';
 import Publications from '../components/Publications';
 import Research from '../components/Research';
+import MyCV from '../components/MyCV';
 import '../style.css';
 
 function Main(){
@@ -14,6 +15,7 @@ function Main(){
     const [showAbout, setShowAbout] = useState(false);
     const [showPublications, setShowPublications] = useState(false);
     const [showResearch, setShowResearch] = useState(false);
+    const [showCV, setShowCV] = useState(false);
 
     function handleAbout() {
         if (!showAbout){
@@ -39,19 +41,27 @@ function Main(){
         }
     }
 
+    function handleCV() {
+        if (!showCV){
+            setShowCV(true);
+        } else {
+            setShowCV(false);
+        }
+    }
+
     return(
         <section id="about-me">
             <article>
-                <div className="row buttons" style={{zIndex:'100'}}>
-                    {!showAbout ? <button type="button" className="btn btn-primary col-4" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handleAbout()} >About Me</button>}
-                    {!showResearch ? <button type="button" className="btn btn-primary col-4" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handleResearch()} >My Research</button>}
-                    {!showPublications ? <button type="button" className="btn btn-primary col-4" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info col-4" onClick={()=>handlePublications()} >My Publications</button>}
-                </div>
-                <div className="row d-flex m-2">
-                    {showAbout ? <About /> : <></>}
-                    {showResearch ? <Research /> : <></>}
-                    {showPublications ? <Publications /> : <></>}
-                </div>
+                                
+                {!showAbout ? <button type="button" className="btn btn-primary" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info" onClick={()=>handleAbout()} >About Me</button>}
+                    <br/>{showAbout ? <About /> : <></>}
+                {!showResearch ? <button type="button" className="btn btn-primary" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info" onClick={()=>handleResearch()} >My Research</button>}
+                    <br/>{showResearch ? <Research /> : <></>}
+                {!showPublications ? <button type="button" className="btn btn-primary" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info" onClick={()=>handlePublications()} >My Publications</button>}
+                    <br/>{showPublications ? <Publications /> : <></>}
+                {!showCV ? <button type="button" className="btn btn-primary" onClick={()=>handleCV()} >My CV</button> : <button type="button" className="btn btn-info" onClick={()=>handleCV()} >My CV</button>}
+                    <br/>{showCV ? <MyCV /> : <></>}
+                
             </article>
         </section>
     )
