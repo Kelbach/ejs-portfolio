@@ -635,9 +635,11 @@ function Publications(){
     
     return(
         <div className="main publications row d-flex justify-content-center">    
-            <h2>PUBLICATIONS</h2>
-            <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;author=Safron,%20Emily%20J.&amp;db_key=AST">View my publications on ADS.</a> This research has made use of NASA&apos;s Astrophysics Data System Bibliographic Services.<br/>
-            </p>
+            <div className="col-11 mx-auto"><h2>PUBLICATIONS</h2></div>
+            <div className="col-10 mx-auto">
+                <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;author=Safron,%20Emily%20J.&amp;db_key=AST">View my publications on ADS.</a> This research has made use of NASA&apos;s Astrophysics Data System Bibliographic Services.<br/>
+                </p>
+            </div>
             
                 {adsPublications.response.docs.map( pub => (
                     <PubCard 
