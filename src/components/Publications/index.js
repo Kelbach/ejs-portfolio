@@ -635,8 +635,8 @@ function Publications(){
     
     return(
         <div className="main publications row d-flex justify-content-center">    
-            <div className="col-11 mx-auto"><h2>PUBLICATIONS</h2></div>
-            <div className="col-10 mx-auto">
+            <div className="col-12 mx-auto"><h2>PUBLICATIONS</h2></div>
+            <div className="col-11 mx-auto">
                 <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;author=Safron,%20Emily%20J.&amp;db_key=AST">View my publications on ADS.</a> This research has made use of NASA&apos;s Astrophysics Data System Bibliographic Services.<br/>
                 </p>
             </div>
