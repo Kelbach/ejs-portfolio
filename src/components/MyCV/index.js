@@ -56,9 +56,9 @@ function MyCV() {
                 <div className="row">
                 
                     
-                        <div className="col-4"><strong>Dr. Tabetha Boyajian</strong><br/>Assistant Professor of Physics &amp; Astronomy<br/>Louisiana State University<strong><br/>email:  <a href="mailto:boyajian@lsu.edu">boyajian@lsu.edu</a></strong><small><br/>phone: <a href="tel:+2255781161">(225) 578-1161</a> <br/>261-A Nicholson Hall, Tower Dr.<br/>Baton Rouge, LA 70803-4001</small></div>
-                        <div className="col-4"><strong>Dr. Parampreet Singh</strong><br/>Assistant Professor of Physics<br/>Louisiana State University<strong><br/>email:  <a href="mailto:psingh@phys.lsu.edu">psingh@phys.lsu.edu</a></strong><small><br/>phone: <a href="tel:+2255787513">(225) 578-7513</a> <br/>255-A Nicholson Hall, Tower Dr.<br/>Baton Rouge, LA 70803-4001</small></div>
-                        <div className="col-4"><strong>Dr. S. Thomas Megeath</strong><br/>Professor of Astronomy<br/>University of Toledo<strong><br/>email:  <a href="mailto:smegeath@utoledo.edu">smegeath@utoledo.edu</a></strong><small><br/>phone: <a href="tel:+4195307812">(419) 530-7812</a> <br/>Ritter Astrophysical Research Center 2040<br/>Toledo, OH 43606</small></div>
+                        <div className="col-lg-4 col-sm-12 mt-4"><strong><u>Dr. Tabetha Boyajian</u></strong><br/>Assistant Professor of Physics &amp; Astronomy<br/>Louisiana State University<strong><br/>email:  <a href="mailto:boyajian@lsu.edu">boyajian@lsu.edu</a></strong><small><br/>phone: <a href="tel:+2255781161">(225) 578-1161</a> <br/>261-A Nicholson Hall, Tower Dr.<br/>Baton Rouge, LA 70803-4001</small></div>
+                        <div className="col-lg-4 col-sm-12 mt-4"><strong><u>Dr. Parampreet Singh</u></strong><br/>Assistant Professor of Physics<br/>Louisiana State University<strong><br/>email:  <a href="mailto:psingh@phys.lsu.edu">psingh@phys.lsu.edu</a></strong><small><br/>phone: <a href="tel:+2255787513">(225) 578-7513</a> <br/>255-A Nicholson Hall, Tower Dr.<br/>Baton Rouge, LA 70803-4001</small></div>
+                        <div className="col-lg-4 col-sm-12 mt-4"><strong><u>Dr. S. Thomas Megeath</u></strong><br/>Professor of Astronomy<br/>University of Toledo<strong><br/>email:  <a href="mailto:smegeath@utoledo.edu">smegeath@utoledo.edu</a></strong><small><br/>phone: <a href="tel:+4195307812">(419) 530-7812</a> <br/>Ritter Astrophysical Research Center 2040<br/>Toledo, OH 43606</small></div>
                     
                 
                 </div>
@@ -70,8 +70,8 @@ function MyCV() {
                 <div className="row">
                 
                     
-                        <div className="col-4"><strong>Dr. Steven Hubbard</strong><br/>Visiting Assistant Professor of Physics<br/>Stonehill College<strong><br/>email:  <a href="mailto:shubbard@stonehill.edu">shubbard@stonehill.edu</a></strong> </div>
-                        <div className="col-4"><strong>Dr. Rosa Rivera-Hainaj</strong><br/>Associate Vice President<br/>Our Lady of the Lake University<strong><br/>email:  <a href="mailto:rhainaj@lake.ollusa.edu">rhainaj@lake.ollusa.edu</a></strong></div>
+                        <div className="col-lg-4 col-sm-12 mt-4"><strong><u>Dr. Steven Hubbard</u></strong><br/>Visiting Assistant Professor of Physics<br/>Stonehill College<strong><br/>email:  <a href="mailto:shubbard@stonehill.edu">shubbard@stonehill.edu</a></strong> </div>
+                        <div className="col-lg-4 col-sm-12 mt-4"><strong><u>Dr. Rosa Rivera-Hainaj</u></strong><br/>Associate Vice President<br/>Our Lady of the Lake University<strong><br/>email:  <a href="mailto:rhainaj@lake.ollusa.edu">rhainaj@lake.ollusa.edu</a></strong></div>
                     
                
                  </div>

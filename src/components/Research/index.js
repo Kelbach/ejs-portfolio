@@ -9,7 +9,7 @@ function Research(){
         <div className="main row">
             <div className="col-12 mx-auto"><h2>RESEARCH</h2></div>
             <div className="col-11 mx-auto"><h5>Current research interests and projects; updated 18 Dec 2019</h5></div>
-            <div className="col-9 mx-auto">
+            <div className="col-lg-9 col-sm-11 mx-auto">
                 <img className="img-fluid" src={lightcurve} alt="Source:  planethunters.org" />
             </div>
             <div className="col-10 mx-auto mt-1">
@@ -35,7 +35,7 @@ function Research(){
             <div className="col-12 mx-auto">
                 <h2>PAST WORK</h2>
             </div>
-            <div className="col-9 mx-auto">
+            <div className="col-lg-9 col-sm-11 mx-auto">
             <h5>Updated 25 November 2019</h5>
                 <img className="img-fluid" src={hops383} alt="WISE band images of HOPS 383 from Safron et al. 2015"/>
             </div>

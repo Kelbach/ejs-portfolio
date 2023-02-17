@@ -65,6 +65,10 @@ header h1 {
     margin: 0px;
 }
 
+header h4 {
+    margin: 2rem;
+}
+
 .header img {
     width: 15rem;
     margin: 2.5% auto;
@@ -79,9 +83,8 @@ img {
     
 }
 
-.gallery {
-    display: flex;
-    justify-content: space-between;
+.gallery img {
+    margin: 1rem 0px;;
 }
 
 /* Style the top navigation bar */
@@ -137,9 +140,9 @@ img {
     padding: 30px;
 } */
 
-.booty {
+/* .booty {
     background-color: #d4d4d4;
-}
+} */
 
 /* Main column */
 .main {   
@@ -165,7 +168,7 @@ footer {
     text-align: left;
     background: #adadad;
     font-size: 12px;
-    z-index: 100;
+    z-index: 10000;
 }
 
 footer h4 {
@@ -182,17 +185,25 @@ footer p {
     background-color:rgb(104, 104, 104);
 }
 
+@media screen and (max-width: 722px) {
+    footer {
+        height: 5rem; 
+    }
+}
+
 /* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
     .row {   
         flex-direction: column;
     }
-}
-
-/* Responsive layout - when the screen is less than 300px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 300px) {
+    
     .navbar a {
         float: none;
         width: 100%;
     }
 }
+
+/* Responsive layout - when the screen is less than 300px wide, make the navigation links stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 300px) {
+    
+} */

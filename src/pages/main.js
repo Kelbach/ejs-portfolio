@@ -54,13 +54,13 @@ function Main(){
         <section id="about-me" className="">
             <article>
                               
-                {!showAbout ? <button type="button" className="btn btn-primary sticky-top mx-3" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info sticky-top mx-3" onClick={()=>handleAbout()} >About Me</button>}
+                {!showAbout ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handleAbout()} >About Me</button>}
                     <br/>{showAbout ? <About /> : <></>}
-                {!showResearch ? <button type="button" className="btn btn-primary sticky-top mx-3" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info sticky-top mx-3" onClick={()=>handleResearch()} >My Research</button>}
+                {!showResearch ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handleResearch()} >My Research</button>}
                     <br/>{showResearch ? <Research /> : <></>}
-                {!showPublications ? <button type="button" className="btn btn-primary sticky-top mx-3" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info sticky-top mx-3" onClick={()=>handlePublications()} >My Publications</button>}
+                {!showPublications ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handlePublications()} >My Publications</button>}
                     <br/>{showPublications ? <Publications /> : <></>}
-                {!showCV ? <button type="button" className="btn btn-primary sticky-top mx-3 px-5" onClick={()=>handleCV()} >My CV</button> : <button type="button" className="btn btn-info sticky-top mx-3 px-5" onClick={()=>handleCV()} >My CV</button>}
+                {!showCV ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0 px-5" onClick={()=>handleCV()} >My CV</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0 px-5" onClick={()=>handleCV()} >My CV</button>}
                     <br/>{showCV ? <MyCV /> : <></>}
               
             </article>

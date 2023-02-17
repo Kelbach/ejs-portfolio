@@ -34,12 +34,18 @@ function About() {
         <div className="col-9 mx-auto">
           <p>My love for astrophysics began with the unbelievable coolness and mystery of black holes, and has continued with the constant, awe-inspiring feeling of smallness that comes with studying things many orders of magnitude bigger, older, and more profound than humans.
           </p>
-          <div className="gallery">
-            <img src={me3} style={{width:"100%"}} alt="That time I was a guest investigator on the SOFIA aircraft/telescope" /><br/>
-            <img src={me2} style={{width:"100%"}} alt="In Bernheim Forest, one of my favorite places" /><br/>
-          </div>
+          
         </div>
-      
+        <div className="gallery col-12 mx-auto">
+          <div className="row">
+            <div className="col-sm-10 col-lg-5 m-auto">
+              <img className="img-fluid" src={me3} style={{width:"100%"}} alt="That time I was a guest investigator on the SOFIA aircraft/telescope" />
+            </div>
+            <div className="col-sm-10 col-lg-5 m-auto">
+              <img className="img-fluid" src={me2} style={{width:"100%"}} alt="In Bernheim Forest, one of my favorite places" />
+            </div>
+          </div>
+        </div>  
       </div>
     );
   }
