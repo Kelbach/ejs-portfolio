@@ -13,7 +13,7 @@ body {
     font-family: Arial;
     margin: 0px;
     padding-bottom: 4rem;
-    
+
 }
 
 a:link {
@@ -50,13 +50,11 @@ a:active {
 }
 /* Header/logo Title */
 header {
-    padding: 50px;
     text-align: center;
     background-image: url('./assets/IMAGES/juno.jpg');
     /*background: #8fd0c0;*/
     color: white;
     padding: 0px;
-    
 }
 
 /* Increase the font size of the heading */
@@ -69,11 +67,11 @@ header h4 {
     margin: 2rem;
 }
 
-.header img {
+#profile-pic {
     width: 15rem;
-    margin: 2.5% auto;
+    margin: 0 auto;
     border-radius: 50%;
-    
+    transform: translateY(-20px)
 }
 
 img {
@@ -85,6 +83,10 @@ img {
 
 .gallery img {
     margin: 1rem 0px;;
+}
+
+.button-nav {
+    background-color: #333;
 }
 
 /* Style the top navigation bar */
