@@ -2,10 +2,20 @@ import React from 'react';
 import kevinPaint from '../../assets/IMAGES/kevin-paint.jpg';
 import EJSCV from '../../assets/IMAGES/EJS-CV-2021.pdf';
 import '../../style.css';
+import Anime from 'react-anime';
 
 function MyCV() {
     return(
-        <div className="main row">
+        <Anime
+          targets={'.main .row'}
+          translateX={['2950px','3000px']}
+          opacity={['0%','100%']}
+          direction={'normal'}
+          easing={'easeInOutSine'}
+          delay={50}
+          duration={750}
+          loop={false}>
+        <div className="main row" id="cv">
             <div className="col-12 mx-auto">
                 <h2>CURRICULUM VITAE</h2>
             </div>
@@ -77,6 +87,7 @@ function MyCV() {
                  </div>
             </div>   
         </div>
+        </Anime>
     );
 }
 

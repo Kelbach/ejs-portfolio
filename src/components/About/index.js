@@ -4,15 +4,33 @@ import me2 from '../../assets/IMAGES/me-2.png';
 import me3 from '../../assets/IMAGES/me-3.png';
 // import lightcurve from '../../assets/IMAGES/lightcurve.png';
 // import hops383 from '../../assets/IMAGES/hops383.png';
+// import anime from 'animejs/lib/anime.es.js';
+import Anime from 'react-anime';
 import '../../style.css';
 
 function About() {
 
-  
+  // anime({
+  //     targets: '.main .row',
+  //     translateX: ['-100px','0px'],
+  //     duration: 800,
+  //     loop: false
+  // });
 
+// anime might lead to problems down the road 
+// since the main div loads so off screen
 
     return (
-      <div className="main row">
+      <Anime
+          targets={'.main .row'}
+          translateX={['2950px','3000px']}
+          opacity={['0%','100%']}
+          direction={'normal'}
+          easing={'easeInOutSine'}
+          delay={50}
+          duration={750}
+          loop={false}>
+      <div className="main row" id="about">
         <div className="col-12 mx-auto"><h2>ABOUT ME</h2></div>
         
         <div className="col-11 mx-auto">
@@ -47,6 +65,7 @@ function About() {
           </div>
         </div>  
       </div>
+      </Anime>
     );
   }
 

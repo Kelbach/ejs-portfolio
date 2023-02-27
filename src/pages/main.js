@@ -8,6 +8,7 @@ import About from '../components/About';
 import Publications from '../components/Publications';
 import Research from '../components/Research';
 import MyCV from '../components/MyCV';
+// import anime from 'animejs/lib/anime.es.js';
 import '../style.css';
 
 function Main(){
@@ -49,18 +50,26 @@ function Main(){
         }
     }
 
+    // anime({
+    //     targets: 'main',
+    //     translateX: ['-100px','0px'],
+    //     duration: 800,
+    //     direction: 'alternate',
+    //     loop: false
+    // });
+
     return(
         <div className="container-md">
         <section id="about-me" className="">
             <article>
                               
-                {!showAbout ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handleAbout()} >About Me</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handleAbout()} >About Me</button>}
+                {!showAbout ? <a href="#about"><button type="button" className="btn btn-primary sticky-top my-3 py-1 mx-0" onClick={()=>handleAbout()} >About Me</button></a> : <button type="button" className="btn btn-info sticky-top my-3 py-1 mx-0" onClick={()=>handleAbout()} >About Me</button>}
                     <br/>{showAbout ? <About /> : <></>}
-                {!showResearch ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handleResearch()} >My Research</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handleResearch()} >My Research</button>}
+                {!showResearch ? <a href="#research"><button type="button" className="btn btn-primary sticky-top my-3 py-1 mx-0" onClick={()=>handleResearch()} >My Research</button></a> : <button type="button" className="btn btn-info sticky-top my-3 py-1 mx-0" onClick={()=>handleResearch()} >My Research</button>}
                     <br/>{showResearch ? <Research /> : <></>}
-                {!showPublications ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0" onClick={()=>handlePublications()} >My Publications</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0" onClick={()=>handlePublications()} >My Publications</button>}
+                {!showPublications ? <a href="#publications"><button type="button" className="btn btn-primary sticky-top my-3 py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button></a> : <button type="button" className="btn btn-info sticky-top my-3 py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button>}
                     <br/>{showPublications ? <Publications /> : <></>}
-                {!showCV ? <button type="button" className="btn btn-primary sticky-top my-3 mx-0 px-5" onClick={()=>handleCV()} >My CV</button> : <button type="button" className="btn btn-info sticky-top my-3 mx-0 px-5" onClick={()=>handleCV()} >My CV</button>}
+                {!showCV ? <a href="#cv"><button type="button" className="btn btn-primary sticky-top my-3 py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button></a> : <button type="button" className="btn btn-info sticky-top my-3 py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button>}
                     <br/>{showCV ? <MyCV /> : <></>}
               
             </article>

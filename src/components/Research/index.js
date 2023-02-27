@@ -1,12 +1,22 @@
 import React from "react";
 import lightcurve from "../../assets/IMAGES/lightcurve.png";
 import hops383 from "../../assets/IMAGES/hops383.png";
+import Anime from "react-anime";
 
 function Research(){
 
 
     return(
-        <div className="main row">
+        <Anime
+          targets={'.main .row'}
+          translateX={['2950px','3000px']}
+          opacity={['0%','100%']}
+          direction={'normal'}
+          easing={'easeInOutSine'}
+          delay={50}
+          duration={750}
+          loop={false}>
+        <div className="main row" id="research">
             <div className="col-12 mx-auto"><h2>RESEARCH</h2></div>
             <div className="col-11 mx-auto"><h5>Current research interests and projects; updated 18 Dec 2019</h5></div>
             <div className="col-lg-9 col-sm-11 mx-auto">
@@ -50,6 +60,7 @@ function Research(){
                 <p>During 2013 and parts of 2016 and 2017, I also worked with Dr. Parampreet Singh at LSU on various topics in theoretical Loop Quantum Cosmology (LQC).  I wrote simulations to study geodesics in Big Bounce models, and examined exotic singularities in anisotropic Bianchi type-I spacetime.</p>
             </div>
         </div>
+        </Anime>
     )
 }
 

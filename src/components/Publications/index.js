@@ -1,6 +1,7 @@
 import React from 'react';
 import PubCard from '../PubCard';
 // import api from '../../utils/api';
+import Anime from 'react-anime';
 
 function Publications(){
 
@@ -634,7 +635,16 @@ function Publications(){
     };
     
     return(
-        <div className="main publications row d-flex justify-content-center">    
+        <Anime
+          targets={'.main .row'}
+          translateX={['2950px','3000px']}
+          opacity={['0%','100%']}
+          direction={'normal'}
+          easing={'easeInOutSine'}
+          delay={50}
+          duration={750}
+          loop={false}>
+        <div className="main publications row d-flex justify-content-center" id="publications">    
             <div className="col-12 mx-auto"><h2>PUBLICATIONS</h2></div>
             <div className="col-11 mx-auto">
                 <p><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;author=Safron,%20Emily%20J.&amp;db_key=AST">View my publications on ADS.</a> This research has made use of NASA&apos;s Astrophysics Data System Bibliographic Services.<br/>
@@ -655,6 +665,7 @@ function Publications(){
             
             
         </div>
+        </Anime>
     );
 }
 

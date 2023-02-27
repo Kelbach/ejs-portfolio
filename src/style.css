@@ -147,7 +147,10 @@ img {
 /* Main column */
 .main {   
     padding: 30px;
+    transform: translateX(-3000px);
 }
+
+
 
 /* Fake image, just for this example */
 .fakeimg {
