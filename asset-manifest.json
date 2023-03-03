@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e90d60c3.css",
-    "main.js": "/static/js/main.4ec50a82.js",
-    "static/js/787.ace20ebc.chunk.js": "/static/js/787.ace20ebc.chunk.js",
-    "static/media/me-3.png": "/static/media/me-3.99311e62d9650fff64f3.png",
-    "static/media/me-2.png": "/static/media/me-2.65118d0f720efa80f69d.png",
-    "static/media/dfjkdsl.png": "/static/media/dfjkdsl.537b193a5d5b46d0fc0e.png",
-    "static/media/hops383.png": "/static/media/hops383.61ee0fb9c8e48c7a9015.png",
-    "static/media/juno.jpg": "/static/media/juno.b306703f7e3144fef5b9.jpg",
-    "static/media/lightcurve.png": "/static/media/lightcurve.533d3397d44879f251fd.png",
-    "static/media/EJS-CV-2021.pdf": "/static/media/EJS-CV-2021.4720d373ce38237e88d3.pdf",
-    "static/media/kevin-paint.jpg": "/static/media/kevin-paint.acc5e2cf183bb97b62af.jpg",
-    "index.html": "/index.html",
-    "main.e90d60c3.css.map": "/static/css/main.e90d60c3.css.map",
-    "main.4ec50a82.js.map": "/static/js/main.4ec50a82.js.map",
-    "787.ace20ebc.chunk.js.map": "/static/js/787.ace20ebc.chunk.js.map"
+    "main.css": "/ejs-portfolio/static/css/main.cae0350a.css",
+    "main.js": "/ejs-portfolio/static/js/main.938925aa.js",
+    "static/js/787.ace20ebc.chunk.js": "/ejs-portfolio/static/js/787.ace20ebc.chunk.js",
+    "static/media/me-3.png": "/ejs-portfolio/static/media/me-3.99311e62d9650fff64f3.png",
+    "static/media/me-2.png": "/ejs-portfolio/static/media/me-2.65118d0f720efa80f69d.png",
+    "static/media/dfjkdsl.png": "/ejs-portfolio/static/media/dfjkdsl.537b193a5d5b46d0fc0e.png",
+    "static/media/hops383.png": "/ejs-portfolio/static/media/hops383.61ee0fb9c8e48c7a9015.png",
+    "static/media/juno.jpg": "/ejs-portfolio/static/media/juno.b306703f7e3144fef5b9.jpg",
+    "static/media/lightcurve.png": "/ejs-portfolio/static/media/lightcurve.533d3397d44879f251fd.png",
+    "static/media/EJS-CV-2021.pdf": "/ejs-portfolio/static/media/EJS-CV-2021.4720d373ce38237e88d3.pdf",
+    "static/media/kevin-paint.jpg": "/ejs-portfolio/static/media/kevin-paint.acc5e2cf183bb97b62af.jpg",
+    "index.html": "/ejs-portfolio/index.html",
+    "main.cae0350a.css.map": "/ejs-portfolio/static/css/main.cae0350a.css.map",
+    "main.938925aa.js.map": "/ejs-portfolio/static/js/main.938925aa.js.map",
+    "787.ace20ebc.chunk.js.map": "/ejs-portfolio/static/js/787.ace20ebc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e90d60c3.css",
-    "static/js/main.4ec50a82.js"
+    "static/css/main.cae0350a.css",
+    "static/js/main.938925aa.js"
   ]
 }
