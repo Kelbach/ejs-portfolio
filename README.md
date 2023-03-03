@@ -1,7 +1,8 @@
 # Emily Safron React Portfolio
-## Deployed App: TBD
+## Deployed App: http://kelbach.github.io/ejs-portfolio
 * React Single Page App
 * A portfolio using React
+![image](https://user-images.githubusercontent.com/87092340/222604413-05bfeb5c-9ad4-449f-b255-2ff1aedece79.png)
 
 
 In the event of using this repo as a basic React App starting point, please use the following below:
