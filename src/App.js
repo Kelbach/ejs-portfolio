@@ -11,7 +11,7 @@ import './style.css';
 
 function App() {
   // Using useState, set the default value for currentPage to 'Home'
-  const [currentPage, handlePageChange] = useState('About');
+  const currentPage = 'About';
   const [showAbout, setShowAbout] = useState(false);
   const [showPublications, setShowPublications] = useState(false);
   const [showResearch, setShowResearch] = useState(false);
@@ -20,33 +20,57 @@ function App() {
   function handleAbout() {
       if (!showAbout){
           setShowAbout(true);
+          setShowPublications(false);
+          setShowResearch(false);
+          setShowCV(false);
       } else {
           setShowAbout(false);
       }
+    setTimeout(
+      scroll("about"), 5
+    ) 
   }
 
   function handlePublications() {
       if (!showPublications){
           setShowPublications(true);
+          setShowAbout(false);
+          setShowResearch(false);
+          setShowCV(false);
       } else {
           setShowPublications(false);
       }
+    setTimeout(
+      scroll("publications"), 5
+    )
   }    
 
   function handleResearch() {
       if (!showResearch){
           setShowResearch(true);
+          setShowAbout(false);
+          setShowPublications(false);
+          setShowCV(false);
       } else {
           setShowResearch(false);
       }
+    setTimeout(
+      scroll("research"), 5
+    )
   }
 
   function handleCV() {
       if (!showCV){
           setShowCV(true);
+          setShowAbout(false);
+          setShowPublications(false);
+          setShowResearch(false);
       } else {
           setShowCV(false);
       }
+    setTimeout(
+      scroll("cv"), 5
+    )
   }
 
   // The renderPage method uses a switch statement to render the appropriate current page
@@ -60,6 +84,14 @@ function App() {
                 cv={showCV}
                 />;
     }
+  };
+
+  //scroll function is wonky
+  function scroll(id) {
+    const section = document.getElementById(id);
+    window.scrollTo({
+      top: section.current.offsetTop,
+    });
   };
 
   return (
@@ -78,10 +110,10 @@ function App() {
     </section> }
     </header>
     <nav className="button-nav sticky-top d-flex justify-content-around">      
-      {!showAbout ? <a href="#about"><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handleAbout()} >About Me</button></a> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handleAbout()} >About Me</button>}  
-      {!showResearch ? <a href="#research"><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handleResearch()} >My Research</button></a> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handleResearch()} >My Research</button>}     
-      {!showPublications ? <a href="#publications"><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button></a> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button>}    
-      {!showCV ? <a href="#cv"><button type="button" className="btn btn-primary sticky-top py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button></a> : <button type="button" className="btn btn-info sticky-top py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button>}     
+      {!showAbout ? <span><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handleAbout()} >About Me</button></span> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handleAbout()} >About Me</button>}  
+      {!showResearch ? <span><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handleResearch()} >My Research</button></span> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handleResearch()} >My Research</button>}     
+      {!showPublications ? <span><button type="button" className="btn btn-primary sticky-top py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button></span> : <button type="button" className="btn btn-info sticky-top py-1 mx-0" onClick={()=>handlePublications()} >My Publications</button>}    
+      {!showCV ? <span><button type="button" className="btn btn-primary sticky-top py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button></span> : <button type="button" className="btn btn-info sticky-top py-1 mx-0 px-5" onClick={()=>handleCV()} >My CV</button>}     
     </nav>
     <div className="booty">{renderPage(currentPage)}</div>
     <footer>
